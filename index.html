@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rat Cafe - Головна</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-stone-50 text-stone-800 font-sans">
+    <nav class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-stone-200 h-20 flex items-center justify-between px-6 md:px-12">
+        <a href="index.html" class="text-2xl font-bold text-amber-600">Rat Cafe</a>
+        <div class="hidden md:flex space-x-2">
+            <a href="index.html" class="bg-amber-500 text-white rounded-lg px-4 py-2 font-medium">Головна</a>
+            <a href="about.html" class="hover:bg-amber-50 text-stone-700 rounded-lg px-4 py-2 font-medium transition">Про нас</a>
+            <a href="services.html" class="hover:bg-amber-50 text-stone-700 rounded-lg px-4 py-2 font-medium transition">Меню</a>
+            <a href="gallery.html" class="hover:bg-amber-50 text-stone-700 rounded-lg px-4 py-2 font-medium transition">Галерея</a>
+            <a href="booking.html" class="hover:bg-amber-50 text-stone-700 rounded-lg px-4 py-2 font-medium transition">Бронювання</a>
+            <a href="contacts.html" class="hover:bg-amber-50 text-stone-700 rounded-lg px-4 py-2 font-medium transition">Контакти</a>
+        </div>
+    </nav>
+    <header class="relative min-h-[80vh] bg-cover bg-center flex items-center justify-center text-center px-4" style="background-image: url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4');">
+        <div class="absolute inset-0 bg-black/50"></div>
+        <div class="relative z-10 max-w-3xl text-white">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6">Ласкаво просимо до Rat Cafe</h1>
+            <p class="text-lg md:text-xl mb-8 text-stone-200">Затишне місце для смачних обідів, приємних вечорів та святкування особливих подій у Бориславі.</p>
+            <a href="booking.html" class="bg-amber-500 hover:bg-amber-600 text-white px-8 py-4 rounded-xl text-lg font-semibold shadow-2xl transition inline-block">Забронювати столик</a>
+        </div>
+    </header>
+    <main>
+        <section class="py-20 px-6 max-w-6xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold mb-4">Популярні страви</h2>
+                <p class="text-stone-600 max-w-xl mx-auto">Спробуйте найкращі позиції з нашого меню, які підготували для вас наші кухарі.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1544025162-d76694265947" alt="Садж великий" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <span class="text-xs font-bold text-amber-600 uppercase tracking-wider">Садж</span>
+                        <h3 class="text-xl font-bold mt-1 mb-2">Садж великий</h3>
+                        <p class="text-stone-600 text-sm mb-4">Шашлик свинний, курячий, ребра свинні, овочі гриль, картопля печена, соус.</p>
+                        <div class="flex justify-between items-center"><span class="text-lg font-bold text-stone-900">1100 ₴</span></div>
+                    </div>
+                </div>
+                <div class="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1547592166-23ac45744acd" alt="Комплексний обід №1" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <span class="text-xs font-bold text-amber-600 uppercase tracking-wider">Комплексні обіди</span>
+                        <h3 class="text-xl font-bold mt-1 mb-2">Комплексний обід №1</h3>
+                        <p class="text-stone-600 text-sm mb-4">Борщ, пельмені, салат з капусти, узвар, хліб.</p>
+                        <div class="flex justify-between items-center"><span class="text-lg font-bold text-stone-900">180 ₴</span></div>
+                    </div>
+                </div>
+                <div class="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5" alt="Комплексний обід №2" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <span class="text-xs font-bold text-amber-600 uppercase tracking-wider">Комплексні обіди</span>
+                        <h3 class="text-xl font-bold mt-1 mb-2">Комплексний обід №2</h3>
+                        <p class="text-stone-600 text-sm mb-4">Борщ, вареники з картоплею, салат з капусти, узвар, хліб.</p>
+                        <div class="flex justify-between items-center"><span class="text-lg font-bold text-stone-900">180 ₴</span></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="bg-amber-50 py-20 px-6">
+            <div class="max-w-4xl mx-auto text-center">
+                <h2 class="text-3xl font-bold mb-10">Відгуки гостей</h2>
+                <div class="bg-white p-8 rounded-2xl shadow-lg">
+                    <p class="text-lg italic text-stone-700 mb-4">“Затишне місце для смачних обідів, приємних вечорів у колі близьких.”</p>
+                    <div class="font-bold text-amber-600">Відвідувач</div>
+                    <div class="text-xs text-stone-400 mt-1">Google Maps</div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="bg-stone-900 text-stone-300 py-12 px-6">
+        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div>
+                <h3 class="text-xl font-bold text-white mb-4">Rat Cafe</h3>
+                <p class="text-sm text-stone-400">Затишне місце для ваших найкращих подій у Бориславі.</p>
+            </div>
+            <div>
+                <h3 class="text-lg font-bold text-white mb-4">Контакти</h3>
+                <p class="text-sm text-stone-400 mb-2">вул. Коваліва, 16Д, Борислав</p>
+                <p class="text-sm text-stone-400 mb-2">+380739099000</p>
+                <p class="text-sm text-stone-400">info@rat-cafe.ua</p>
+            </div>
+            <div>
+                <h3 class="text-lg font-bold text-white mb-4">Графік роботи</h3>
+                <p class="text-sm text-stone-400">Пн-Нд: 11:00 - 21:30</p>
+            </div>
+        </div>
+    </footer>
+<script>
+    document.getElementById('mobile-toggle')?.addEventListener('click', function() {
+      document.getElementById('mobile-menu')?.classList.toggle('hidden');
+    });
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', e => {
+        const target = document.querySelector(a.getAttribute('href'));
+        if (target) { e.preventDefault(); target.scrollIntoView({ behavior: 'smooth' }); }
+      });
+    });
+  </script>
+</body>
+</html>
