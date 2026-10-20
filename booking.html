@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rat Cafe - Бронювання</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-stone-50 text-stone-800 font-sans">
+    <nav class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-stone-200 h-20 flex items-center justify-between px-6 md:px-12">
+        <a href="index.html" class="text-2xl font-bold text-amber-600">Rat Cafe</a>
+        <div class="hidden md:flex space-x-2">
+            <a href="index.html" class="hover:bg-amber-50 text-stone-700 rounded-lg px-4 py-2 font-medium transition">Головна</a>
+            <a href="about.html" class="hover:bg-amber-50 text-stone-700 rounded-lg px-4 py-2 font-medium transition">Про нас</a>
+            <a href="services.html" class="hover:bg-amber-50 text-stone-700 rounded-lg px-4 py-2 font-medium transition">Меню</a>
+            <a href="gallery.html" class="hover:bg-amber-50 text-stone-700 rounded-lg px-4 py-2 font-medium transition">Галерея</a>
+            <a href="booking.html" class="bg-amber-500 text-white rounded-lg px-4 py-2 font-medium">Бронювання</a>
+            <a href="contacts.html" class="hover:bg-amber-50 text-stone-700 rounded-lg px-4 py-2 font-medium transition">Контакти</a>
+        </div>
+    </nav>
+    <div class="bg-stone-100 py-4 px-6 border-b">
+        <div class="max-w-6xl mx-auto text-sm text-stone-600">
+            <a href="index.html" class="hover:underline">Головна</a> > <span class="text-stone-900 font-medium">Бронювання</span>
+        </div>
+    </div>
+    <main class="py-20 px-6">
+        <div class="max-w-2xl mx-auto bg-white rounded-3xl shadow-2xl p-10">
+            <h1 class="text-3xl font-bold mb-2 text-center">Бронювання столика</h1>
+            <p class="text-stone-600 text-center mb-8">Заповніть форму нижче, і ми зв'яжемося з вами для підтвердження.</p>
+            <form action="https://formsubmit.co/info@rat-cafe.ua" method="POST" class="space-y-6">
+                <div>
+                    <label class="block text-sm font-medium text-stone-700 mb-2">Ваше ім'я</label>
+                    <input type="text" name="name" required class="w-full px-5 py-4 border-2 border-gray-200 rounded-xl focus:border-amber-500 focus:ring-4 focus:ring-amber-100 outline-none transition" placeholder="Введіть ваше ім'я">
+                </div>
+                <div>
+                    <label class="block text-sm font-medium text-stone-700 mb-2">Номер телефону</label>
+                    <input type="tel" name="phone" required class="w-full px-5 py-4 border-2 border-gray-200 rounded-xl focus:border-amber-500 focus:ring-4 focus:ring-amber-100 outline-none transition" placeholder="+380...">
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div>
+                        <label class="block text-sm font-medium text-stone-700 mb-2">Дата</label>
+                        <input type="date" name="date" required class="w-full px-5 py-4 border-2 border-gray-200 rounded-xl focus:border-amber-500 focus:ring-4 focus:ring-amber-100 outline-none transition">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-stone-700 mb-2">Час</label>
+                        <input type="time" name="time" required class="w-full px-5 py-4 border-2 border-gray-200 rounded-xl focus:border-amber-500 focus:ring-4 focus:ring-amber-100 outline-none transition">
+                    </div>
+                </div>
+                <div>
+                    <label class="block text-sm font-medium text-stone-700 mb-2">Кількість гостей</label>
+                    <input type="number" name="guests" min="1" max="20" value="2" required class="w-full px-5 py-4 border-2 border-gray-200 rounded-xl focus:border-amber-500 focus:ring-4 focus:ring-amber-100 outline-none transition">
+                </div>
+                <button type="submit" class="w-full bg-gradient-to-r from-amber-500 to-orange-500 text-white py-5 rounded-xl text-lg font-bold hover:shadow-xl transition">Забронювати</button>
+            </form>
+        </div>
+    </main>
+    <footer class="bg-stone-900 text-stone-300 py-12 px-6">
+        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div>
+                <h3 class="text-xl font-bold text-white mb-4">Rat Cafe</h3>
+                <p class="text-sm text-stone-400">Затишне місце для ваших найкращих подій у Бориславі.</p>
+            </div>
+            <div>
+                <h3 class="text-lg font-bold text-white mb-4">Контакти</h3>
+                <p class="text-sm text-stone-400 mb-2">вул. Коваліва, 16Д, Борислав</p>
+                <p class="text-sm text-stone-400 mb-2">+380739099000</p>
+                <p class="text-sm text-stone-400">info@rat-cafe.ua</p>
+            </div>
+            <div>
+                <h3 class="text-lg font-bold text-white mb-4">Графік роботи</h3>
+                <p class="text-sm text-stone-400">Пн-Нд: 11:00 - 21:30</p>
+            </div>
+        </div>
+    </footer>
+<script>
+    document.getElementById('mobile-toggle')?.addEventListener('click', function() {
+      document.getElementById('mobile-menu')?.classList.toggle('hidden');
+    });
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', e => {
+        const target = document.querySelector(a.getAttribute('href'));
+        if (target) { e.preventDefault(); target.scrollIntoView({ behavior: 'smooth' }); }
+      });
+    });
+  </script>
+</body>
+</html>
