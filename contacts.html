@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rat Cafe - Контакти</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-stone-50 text-stone-800 font-sans">
+    <nav class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-stone-200 h-20 flex items-center justify-between px-6 md:px-12">
+        <a href="index.html" class="text-2xl font-bold text-amber-600">Rat Cafe</a>
+        <div class="hidden md:flex space-x-2">
+            <a href="index.html" class="hover:bg-amber-50 text-stone-700 rounded-lg px-4 py-2 font-medium transition">Головна</a>
+            <a href="about.html" class="hover:bg-amber-50 text-stone-700 rounded-lg px-4 py-2 font-medium transition">Про нас</a>
+            <a href="services.html" class="hover:bg-amber-50 text-stone-700 rounded-lg px-4 py-2 font-medium transition">Меню</a>
+            <a href="gallery.html" class="hover:bg-amber-50 text-stone-700 rounded-lg px-4 py-2 font-medium transition">Галерея</a>
+            <a href="booking.html" class="hover:bg-amber-50 text-stone-700 rounded-lg px-4 py-2 font-medium transition">Бронювання</a>
+            <a href="contacts.html" class="bg-amber-500 text-white rounded-lg px-4 py-2 font-medium">Контакти</a>
+        </div>
+    </nav>
+    <div class="bg-stone-100 py-4 px-6 border-b">
+        <div class="max-w-6xl mx-auto text-sm text-stone-600">
+            <a href="index.html" class="hover:underline">Головна</a> > <span class="text-stone-900 font-medium">Контакти</span>
+        </div>
+    </div>
+    <main class="py-20 px-6 max-w-6xl mx-auto">
+        <h1 class="text-4xl font-bold mb-4 text-center">Контакти</h1>
+        <p class="text-stone-600 text-center mb-16 max-w-xl mx-auto">Зв'яжіться з нами або завітайте до нашого закладу.</p>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+            <div class="bg-white rounded-2xl shadow-lg p-8 space-y-6">
+                <div>
+                    <h3 class="font-bold text-stone-500 text-sm uppercase tracking-wider mb-1">Адреса</h3>
+                    <p class="text-lg font-medium text-stone-800">вул. Коваліва, 16Д, Борислав, Львівська область, 82300</p>
+                </div>
+                <div>
+                    <h3 class="font-bold text-stone-500 text-sm uppercase tracking-wider mb-1">Телефон</h3>
+                    <p class="text-lg font-medium text-stone-800">+380739099000</p>
+                </div>
+                <div>
+                    <h3 class="font-bold text-stone-500 text-sm uppercase tracking-wider mb-1">Email</h3>
+                    <p class="text-lg font-medium text-stone-800">info@rat-cafe.ua</p>
+                </div>
+                <div>
+                    <h3 class="font-bold text-stone-500 text-sm uppercase tracking-wider mb-1">Графік роботи</h3>
+                    <p class="text-lg font-medium text-stone-800">Пн-Нд: 11:00 - 21:30</p>
+                </div>
+            </div>
+            <div class="bg-white rounded-2xl shadow-lg overflow-hidden h-[400px]">
+                <iframe class="w-full h-full border-0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2590.2345!2d23.415!3d49.283!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zVuKBvWx5diBzaGEsIDE20JQsIEJvcnlzbGF2!5e0!3m2!1suk!2sua!4v1620000000000!5m2!1suk!2sua" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </main>
+    <footer class="bg-stone-900 text-stone-300 py-12 px-6">
+        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div>
+                <h3 class="text-xl font-bold text-white mb-4">Rat Cafe</h3>
+                <p class="text-sm text-stone-400">Затишне місце для ваших найкращих подій у Бориславі.</p>
+            </div>
+            <div>
+                <h3 class="text-lg font-bold text-white mb-4">Контакти</h3>
+                <p class="text-sm text-stone-400 mb-2">вул. Коваліва, 16Д, Борислав</p>
+                <p class="text-sm text-stone-400 mb-2">+380739099000</p>
+                <p class="text-sm text-stone-400">info@rat-cafe.ua</p>
+            </div>
+            <div>
+                <h3 class="text-lg font-bold text-white mb-4">Графік роботи</h3>
+                <p class="text-sm text-stone-400">Пн-Нд: 11:00 - 21:30</p>
+            </div>
+        </div>
+    </footer>
+<script>
+    document.getElementById('mobile-toggle')?.addEventListener('click', function() {
+      document.getElementById('mobile-menu')?.classList.toggle('hidden');
+    });
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', e => {
+        const target = document.querySelector(a.getAttribute('href'));
+        if (target) { e.preventDefault(); target.scrollIntoView({ behavior: 'smooth' }); }
+      });
+    });
+  </script>
+</body>
+</html>
